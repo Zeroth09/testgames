@@ -29,7 +29,7 @@ export interface BattleMove {
 
 class BattleService {
   private socket: Socket | null = null;
-  private serverUrl: string = process.env.REACT_APP_API_URL || 'http://localhost:3000'; // URL dari environment variable
+  private serverUrl: string = process.env.REACT_APP_API_URL || 'https://backend-production-9ccf.up.railway.app'; // URL dari environment variable
   private currentBattle: BattleState | null = null;
   private onBattleUpdate?: (battle: BattleState) => void;
   private onBattleStart?: (battle: BattleState) => void;
