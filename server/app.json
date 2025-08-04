@@ -1,0 +1,24 @@
+{
+  "name": "battle-proximity-server",
+  "description": "Backend server untuk sistem battle proximity detection",
+  "repository": "https://github.com/Zeroth09/testgames",
+  "keywords": ["node", "express", "socket.io", "battle", "proximity"],
+  "env": {
+    "NODE_ENV": {
+      "description": "Environment",
+      "value": "production"
+    },
+    "PORT": {
+      "description": "Port untuk server",
+      "value": "3000"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "scripts": {
+    "start": "node index.js"
+  }
+} 
